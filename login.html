@@ -20,13 +20,12 @@
         </div>
 
         <div class="bg-white p-8 rounded-[2.5rem] shadow-2xl shadow-blue-100 border border-white">
-            <h3 class="text-2xl font-black text-center mb-2 text-gray-900">Área de Cliente</h3>
-            <p class="text-gray-500 text-center mb-8 text-sm">Aceda ao seu catálogo personalizado</p>
+            <h3 class="text-2xl font-black text-center mb-8 text-gray-900">Área de Cliente</h3>
             
             <form id="clientLoginForm" class="space-y-4">
                 <div>
                     <label class="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Nome de Utilizador</label>
-                    <input type="text" id="clientUser" placeholder="Ex: henriquev0829" required 
+                    <input type="text" id="clientUser" placeholder="Inserir utilizador" required 
                            class="w-full bg-gray-50 border-none rounded-xl px-5 py-4 focus:ring-2 focus:ring-brand outline-none transition-all">
                 </div>
                 
@@ -36,7 +35,7 @@
             </form>
             
             <div class="mt-8 pt-6 border-t border-gray-50 text-center">
-                <p class="text-xs text-gray-400">Não tem acesso? <a href="index.html#apply" class="text-brand font-bold">Contacte o seu agente.</a></p>
+                <p class="text-xs text-gray-400">Não tem acesso? <a href="mailto:geral@eurodrop.pt" class="text-brand font-bold">Contacte o seu agente.</a></p>
             </div>
         </div>
         
@@ -47,7 +46,7 @@
         document.getElementById('clientLoginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const user = document.getElementById('clientUser').value.trim().toLowerCase();
-            // Redireciona para o subdomínio: henriquev0829.eurodrop.pt
+            // Redireciona para o subdomínio: utilizador.eurodrop.pt
             window.location.href = "https://" + user + ".eurodrop.pt";
         });
     </script>
